@@ -4,13 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SF_29_2016.model
+namespace POP_29.Model
 {
-    publi class Akcija
+    [Serializable]
+
+
+    public class Akcija
     {
         public int Id { get; set; }
+
         public DateTime DatumPocetka { get; set; }
+
         public DateTime DatumZavrsetka { get; set; }
-        public bool  obrisan { get; set; }
+
+       
+        
+        public decimal Popust { get; set; }
+
+
+        public bool Obrisan { get; set; }
     }
 }
